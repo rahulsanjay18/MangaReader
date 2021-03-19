@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <style type="text/css">
+            .tg  {
+                border-collapse:collapse;border-spacing:0;
+            }
+            .tg td{
+                border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+                font-size:14px;
+                overflow:hidden;
+                padding:10px 5px;
+                word-break:normal;
+            }
+            .tg .tg-73oq{
+                border-color:#000000;
+                text-align:left;
+                vertical-align:top
+            }
+        </style>
+        <title>Manga Reader</title> 
+    </head>
+    <body>
+       
+        <table class="tg">
+            <tbody>
+                <tr>
+                    <td class="tg-73oq">
+                        <form action="/chooseFolder/" method="post">
+                            <button name=choose_folder type="submit">
+                        </form>
+                    </td>
+                    <td class="tg-73oq">
+                        {{folder_name}} 
+                    </td>
+                    <td class="tg-73oq">
+                        <select name="chapter">
+                            {% for item in ch_list %}
+                            <option name="{{item}}">{{item}}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                    <td class="tg-73oq">
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <img src={{img_path}}>
+    </body>
+</html>
