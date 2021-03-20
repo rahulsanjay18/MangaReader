@@ -1,0 +1,54 @@
+<table class="tg">
+	<tbody>
+		<tr>
+			<td class="tg-73oq">
+                <form action="/chooseFolder/" method="post">
+                    <input type=file name=file>
+                    <button name=upload_folder type="submit">Choose</button>
+                </form>
+            </td>
+            <td class="tg-73oq">
+                {{folder_name}} 
+            </td>
+            <td class="tg-73oq">
+                <form action="choose_chapter">
+                    <select name="chapter" type="submit" action="/select_chapter/">
+                        {% for item in ch_list %}
+                         <option name="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                </form>
+            </td>
+            <td class="tg-73oq">
+                <form method="POST" action="/choose_manga/">  
+                    <select name="manga" type="submit"> 
+                        {% for item in manga_list %}
+                        <option name="{{item}}" value="{{item}}"> {{item}}</option>
+                        {% endfor %}
+                    </select>
+                </form>
+            </td>
+            <td class="tg-73oq">
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="tg-73oq">
+                
+            </td>
+            <td class="tg-73oq">
+                
+            </td>
+            <td class="tg-73oq">
+                
+            </td>
+            <td class="tg-73oq">
+                
+            </td>
+            <td class="tg-73oq">
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+

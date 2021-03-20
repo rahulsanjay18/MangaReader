@@ -21,51 +21,7 @@
         <title>Manga Reader</title> 
     </head>
     <body>
-       
-        <table class="tg">
-            <tbody>
-                <tr>
-                    <td class="tg-73oq">
-                        <form action="/chooseFolder/" method="post">
-                            <button name=choose_folder type="submit">
-                        </form>
-                    </td>
-                    <td class="tg-73oq">
-                        {{folder_name}} 
-                    </td>
-                    <td class="tg-73oq">
-                        <select name="chapter">
-                            {% for item in ch_list %}
-                            <option name="{{item}}">{{item}}</option>
-                            {% endfor %}
-                        </select>
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                    <td class="tg-73oq">
-                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        {% extends "reader_header.html" %}       
         <img src={{img_path}}>
     </body>
 </html>
