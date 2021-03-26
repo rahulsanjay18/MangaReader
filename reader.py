@@ -30,11 +30,12 @@ def reload():
 
 @app.route("/choose_manga/", methods=["POST"])
 def choose_manga():
-    print("hello:choose_manga:")
-    manga_title = request.form['manga']
-    ch_list = os.listdir(filename + "/" + manga_title)
-    print(ch_list)
-    return render_template("reader.html", manga_list = manga_list, ch_list = ch_list)
+    print("hello:choose_manga")
+    manga_title = request.get_json()
+    print(manga_title)
+    #ch_list = os.listdir(filename + "/" + manga_title)
+    #print(ch_list)
+    #return render_template("reader.html", manga_list = manga_list, ch_list = ch_list)
 
 @app.route("/reader")
 def start_reader():
